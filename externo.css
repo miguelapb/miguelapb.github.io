@@ -1,0 +1,154 @@
+
+	body{
+		background: #F25C54;
+		font-family:"Century Gothic";
+		margin:0px;
+		padding:0px;
+	}   
+	header{
+		text-align:center;
+	}
+	nav {
+      background-color:#F27059;
+      padding: 0px;
+	  height: 59px;
+	  border-radius: 30px;
+    }
+    ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+    }
+    nav li {
+		margin:auto;
+		display: inline-block;
+		margin:auto;
+		padding:20px;
+    }
+	nav li:hover{
+		color:black;
+		background:#F4845F;
+		padding: 20px;
+	}
+	
+	div.contenedor{
+		display:flex;
+		display-flex:flex-wrap;
+		width:90%;
+		margin:auto;
+		background: #F7B267;
+		border-radius: 30px;
+		padding: 20px;
+	}
+	p{
+		font-size:21px;
+		margin-top:55px;
+		text-align: center;
+		display:block;
+		margin-bottom: 60px;
+	}
+	div.imgg {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		width: 100%;
+	}
+	.footer-enlace {
+		color: #8CD1EE;
+		text-decoration: none;
+		margin-left: 10px;
+	}
+	a{
+		text-decoration:none;
+		color:black;
+	}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.banner{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		height:300px;
+	}
+
+	select{
+		border-radius:20px;
+	}
+	
+/* contenido usado solo para la primera página, es la que tiene un poco diferente todo */
+
+	.todo {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width:100%;
+	}
+
+	aside{
+		width: 19%;
+		padding: 20px;
+		background-color: #f2f2f2;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	main.principal {
+		width: 76%;
+		padding: 20px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+/*Esto es exclusivo para la tabla */
+
+	.tabla-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+
+	.table th, .table td {
+	  padding: 9px;
+	  text-align: center;
+	}
+
+	th{
+		color: white;
+	}
+	table{
+		border: 1px solid black;
+		margin-left: 30px;
+		margin-bottom: 15px;
+	}
+	.tablagrande{
+		margin:auto;
+	}
+
+/* Transiciones y transformaciones imágenes del principio */
+
+img.transformacion {
+  transform: rotate(20deg);
+}
+
+img.transicion {
+  transition: transform 0.5s ease;
+}
+
+img.transicion:hover {
+  transform: scale(1.2);
+}
+ 

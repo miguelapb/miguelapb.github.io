@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="externo.css">
+  <link rel="icon" href="imageness/favicon.ico" type="image/x-icon">
+  <title>Repaso</title>
+  <script>
+    function respuesta() {
+      var respuesta = document.getElementById("resp").value;
+      var correcta = "Nepal";
+      if (respuesta === correcta) {
+        alert('Bien! la respuesta es Nepal.');
+      } else {
+        alert('Inténtalo de nuevo. Recuerda que puedes ir para atrás en cualquier momento!');
+      }
+    }
+    function irAPagina() {
+      var pagina = document.getElementById("menuDesplegable").value;
+      if (pagina) {
+        window.location.href = pagina;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <img class="banner" src="imageness/Banner.jpg">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="indexsabiasque.html">¿Sabías qué?</a></li>
+        <li><a href="indexbanderas.html">Banderas distintas</a></li>
+        <li><a href="indexcapitales.html">Capitales del mundo</a></li>
+        <li><a href="indexrepaso.html">Repaso</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="contenedor">
+        <p>Tras haber visto la página entera, voy a hacerte una para ver si te ha servido esta información y que te vayas de esta
+        web sabiendo algo más de como venías</p>
+      </div>
+	  
+      <div class="imgg">
+        <img src="imageness/img2.jpg" alt="img2">
+        <p>¿Dónde es esto?</p>
+        <input type="text" id="resp" placeholder="Escribe tu respuesta aquí">
+        <button onclick="respuesta()">Enviar</button>
+      </div>
+	  
+      <div class="contenedor">
+        <p>Esta es la página final, así que si no consigues sacar esta foto, búscala que ha de estar por la página. Te facilito un menú para que puedas ir a las páginas más rápido</p>
+        <select id="menuDesplegable" onchange="irAPagina()">
+          <option value="">Selecciona una página</option>
+          <option value="index.html">Inicio</option>
+          <option value="indexsabiasque.html">¿Sabías qué?</option>
+          <option value="indexbanderas.html">Banderas distintas</option>
+          <option value="indexcapitales.html">Capitales del mundo</option>
+          <option value="indexbellezas.html">Repaso</option>
+        </select>
+      </div>
+	  
+    </article>
+  </main>
+  <footer>
+    <div>
+      <h3>Información de contacto:</h3>
+      <p>Correo electrónico: miguelparada@todogeografia.com</p>
+      <p>Teléfono: +34 661 90 90 90</p>
+      <a href="contactanos.html" class="enlace">Contáctanos</a>
+    </div>
+  </footer>
+</body>
+</html>
